@@ -1,10 +1,13 @@
-
-
 const App = () => (
     <>
-        <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm">
+        <div className="w-full flex justify-between items-center px-4">
             <a className="btn btn-ghost text-xl">John Mullaney</a>
+            <a href="mailto:jamullaney@protonmail.com?subject=Hey%20John&body=Let's%20connect.">
+                <img src="images/mail.svg" alt="Email Icon" />
+            </a>
         </div>
+    </div>
         <div className="hero bg-base-300 min-h-screen">
             <div className="hero-content text-center">
                 <div className="max-w-md">

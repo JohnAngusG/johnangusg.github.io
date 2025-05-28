@@ -70,7 +70,7 @@ const App = () => (
                             <p>A 2D Harvest Moon / Stardew Valley inspired game. I wanted to challenge myself and implement my own inventory system.</p>
                         </div>
                         <div className="card-actions justify-end">
-                            <a href="https://github.com/JohnAngusG/CatsWeb" target="_blank" className="btn btn-primary">Play Now</a>
+                            <a href="https://johnmullaney.tech/CatsWeb" target="_blank" className="btn btn-primary">Play Now</a>
                         </div>
                     </div>
                 </div>

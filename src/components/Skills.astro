@@ -1,0 +1,65 @@
+---
+// src/components/Skills.astro
+const skillCategories = [
+    {
+        title: "Full-Stack Development",
+        skills: [
+        "JavaScript/TypeScript",
+        "React/Next.js",
+        "Node.js/Express",
+        "Python/Django",
+        "PostgreSQL/MongoDB",
+        "Docker/AWS"
+        ]
+    },
+    {
+        title: "Game Development",
+        skills: [
+        "Unity/C#",
+        "Godot/GDScript",
+        "Game Design Patterns",
+        "2D/3D Graphics",
+        "Engine Development",
+        "Inventory Design"
+        ]
+    },
+    {
+        title: "Tools & Technologies",
+        skills: [
+        "Git/GitHub",
+        "CI/CD Pipelines",
+        "REST/GraphQL APIs",
+        "Internationalization",
+        "Aseprite",
+        "Agile/Scrum"
+        ]
+    }
+];
+---
+
+<section class="py-20 px-4 bg-neutral-100">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-light text-neutral-900 mb-4">Skills & Technologies</h2>
+            <p class="text-neutral-600">
+                A diverse toolkit spanning web development and interactive entertainment.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+        {skillCategories.map((category) => (
+            <div class="bg-white rounded-lg p-6 border border-neutral-200">
+                <h3 class="text-lg font-medium text-neutral-900 mb-4">{category.title}</h3>
+                <ul class="space-y-2">
+                    {category.skills.map((skill) => (
+                    <li class="text-neutral-700 flex items-center">
+                        <span class="w-1.5 h-1.5 bg-neutral-400 rounded-full mr-3 flex-shrink-0"></span>
+                        {skill}
+                    </li>
+                    ))}
+                </ul>
+            </div>
+        ))}
+        </div>
+    </div>
+</section>
